@@ -122,9 +122,10 @@ class EntityModerationForm extends FormBase {
       '#size' => 30,
     ];
 
+    // UGLY HACK to change the label of the submit button - BLS 2023-02-02
     $form['submit'] = [
       '#type' => 'submit',
-      '#value' => $this->t('Apply'),
+      '#value' => $this->t('Publish Now'),
     ];
 
     $form['#theme'] = ['entity_moderation_form'];
